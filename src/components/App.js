@@ -4,25 +4,27 @@ import TodoForm from './TodoForm'
 
 class App extends Component {
 
-  state = {
-    todos: [
-      {
-        id: 0,
-        task: 'Test this Todo Page',
-        completed: false
-      },
-      {
-        id: 1,
-        task: 'Learn Redux',
-        completed: false
-      },
-      {
-        id: 2,
-        task: 'Learn React',
-        completed: true
-      }
-    ]
-  }
+  // state = {
+  //   todos: [
+  //     {
+  //       id: 0,
+  //       task: 'Test this Todo Page',
+  //       completed: false
+  //     },
+  //     {
+  //       id: 1,
+  //       task: 'Learn Redux',
+  //       completed: false
+  //     },
+  //     {
+  //       id: 2,
+  //       task: 'Learn React',
+  //       completed: true
+  //     }
+  //   ]
+  // }
+
+  
 
   handleSubmit = (newTodo) => {
     // console.log(newTodo);
@@ -36,7 +38,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Redux TODOS!</h1>
-        <TodoForm handleSubmit= {this.handleSubmit}/>
+        <TodoForm h andleSubmit= {this.handleSubmit}/>
         <Todos data={this.state.todos}/>
       </div>
     )
